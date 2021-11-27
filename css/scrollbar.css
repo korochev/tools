@@ -1,0 +1,24 @@
+/* =====================Custom===Scrollbar=================== */
+.custom-scrollbar {
+    padding: 10px;
+    background-color: #fff; 
+    height: 100%;
+}
+
+.simplebar-scrollbar { 
+    width: 10px;
+}
+
+.simplebar-scrollbar::before {
+    background-color: #CCB26E !important;
+    border-radius: 10px;
+    
+ }
+
+ .simplebar-scrollbar.simplebar-visible:before {
+     opacity: 0.9;
+ }
+ 
+.simplebar-content-wrapper {
+    overflow: auto;
+}

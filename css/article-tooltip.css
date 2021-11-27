@@ -1,0 +1,55 @@
+.article {
+    padding: 25px 30px;
+    background-color: #fff;
+}
+
+/* .article__tooltip {
+} */
+
+.tooltip-marker,
+.tooltip {
+    display: inline-block;
+}
+
+.tooltip {
+    display: inline-block;
+    position: relative;
+
+}
+
+/* .article__tooltip-marker {
+
+}
+ */
+
+.tooltip-marker {
+    padding: 2px 12px;
+    background-color: #BCBCBC;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.article__tooltip-message {
+    box-sizing: padding-box;
+    width: min-content;
+    bottom: calc(100% + 10px);
+}
+
+.article__tooltip-triangle {
+	border-top: 10px solid rgb(40%,40%,40%,0.9);
+}
+
+.article__tooltip-marker:hover {
+    background-color: #CCB26E;
+}
+
+.article__tooltip-marker:focus + .tooltip-message,
+.article__tooltip-marker:hover + .tooltip-message {
+    opacity: 1;
+}
+
+.article__tooltip:focus-within {
+    outline: 1px solid var(--base-color);
+}

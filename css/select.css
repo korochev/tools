@@ -1,0 +1,144 @@
+/* =====================Custom===Select=================== */
+.select-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 176px;
+    font-size: inherit;
+    color: inherit;
+  }
+
+  /* @media (min-width: 768px) {
+    .select-box {
+      width: 70%;
+    }
+  }
+  @media (min-width: 992px) {
+    .select-box {
+      width: 50%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .select-box {
+      width: 30%;
+    }
+  } */
+  
+  .select-box__current {
+    position: relative;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  .select-box__option {
+    cursor: pointer;
+  }
+ 
+  .select-box__option:focus {
+    outline: none;
+  }
+
+  .select-box__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+            transform: translateY(-50%) rotate(180deg);
+    width: 20px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .select-box__value {
+    display: flex;
+  }
+  .select-box__input {
+    display: none;
+  }
+  .select-box__input:checked + .select-box__input-text {
+    display: block;
+  }
+  .select-box__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #CCB26E;
+    z-index: 0;
+  }
+  .select-box__list {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+    margin-top: -7px;
+    list-style: none;
+    opacity: 0;
+    -webkit-animation-name: HideList;
+            animation-name: HideList;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: step-start;
+            animation-timing-function: step-start;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .select-box__option {
+    display: block;
+    padding: 15px;
+  }
+  .select-box__option:hover, .select-box__option:focus {
+    color: #fff;
+    background-color: #CCB26E;
+  }
+  
+  @-webkit-keyframes HideList {
+    from {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+    to {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+    }
+  }
+  
+  @keyframes HideList {
+    from {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+    to {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+    }
+  }
+
+  .toggle-select-box-item,
+  .select-box__change-js:focus + .select-box__list{
+    opacity: 1;
+    -webkit-animation-name: none;
+            animation-name: none;
+  }
+
+  .toggle-select-box-icon,
+  .select-box__change-js:focus .select-box__icon {
+    -webkit-transform: translateY(-50%) rotate(360deg);
+            transform: translateY(-50%) rotate(360deg);
+  }
+
+  .select-box__current:focus {
+    outline: 1px solid var(--base-color);
+  }
