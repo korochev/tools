@@ -32,7 +32,7 @@
 }
 
 .article__tooltip-message {
-    box-sizing: padding-box;
+    box-sizing: content-box;
     width: min-content;
     bottom: calc(100% + 10px);
 }
