@@ -331,9 +331,8 @@
                                 <span class="validate-handling-tooltip-triangle tooltip-triangle"></span>
                             </span>
                         </label>
-                         <label class="validate-handling__label" inputmode="numeric" aria-label="Введите телефон">
                             <span class="validate-handling__input-description" id="input-description-tel">Укажите ваш телефон</span>
-                            <input required data-tel-input type="tel" aria-describedby="message-error-tel" class="validate-handling__input validate-handling__input_send_tel"  placeholder="Телефон*" aria-label="Обязательное поле" autocomplete="on" pattern=".{18,18}" title="+X {код страны} ХХХ {код региона или оператора сотовой связи} 
+                            <input required data-tel-input type="tel" inputmode="numeric" aria-describedby="message-error-tel" class="validate-handling__input validate-handling__input_send_tel"  placeholder="Телефон*" aria-label="Обязательное поле" autocomplete="on" pattern=".{18,18}" title="+X {код страны} ХХХ {код региона или оператора сотовой связи} 
                             ХХХХХХХХ {номер абонента} (например:+79050360656)." aria-required="true" aria-labelledby="input-description-tel">
                             <span id="message-error-tel" role="tooltip" class="validate-handling-tooltip-message validate-handling-tooltip-message_error_tel tooltip-message" style="z-index: 110;" tabindex="0">
                                 <a href="#" class="validate-handling__tooltip-close">X</a>
